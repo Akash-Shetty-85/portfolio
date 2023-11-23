@@ -17,7 +17,7 @@
   height: 20px;
   width: 20px;
 }
-/*  */
+  */
 @media (max-width: 767px) {
   table {
     background: blanchedalmond;
@@ -27,8 +27,7 @@
   .action_btn {
     column-gap: 0.5rem;
   }
-} */
-/* Reset some default styles for better consistency */
+}
 table {
     width: 100%;
     border-collapse: collapse;
