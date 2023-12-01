@@ -60,3 +60,9 @@ h6 {
 #__next {
   isolation: isolate;
 }
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
