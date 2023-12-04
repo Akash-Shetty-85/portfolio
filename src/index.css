@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Poppins&family=Smooch&display=swap');
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -6,12 +8,14 @@
 *::after {
   box-sizing: border-box;
 }
+
 /*
   2. Remove default margin
 */
 * {
   margin: 0;
 }
+
 /*
   Typographic tweaks!
   3. Add accessible line-height
@@ -21,6 +25,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+
 /*
   5. Improve media defaults
 */
@@ -32,6 +37,7 @@ svg {
   display: block;
   max-width: 100%;
 }
+
 /*
   6. Remove built-in form typography styles
 */
@@ -41,6 +47,7 @@ textarea,
 select {
   font: inherit;
 }
+
 /*
   7. Avoid text overflows
 */
@@ -53,6 +60,7 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
 /*
   8. Create a root stacking context
 */
@@ -60,9 +68,11 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
 /*
   8. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }

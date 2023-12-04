@@ -6,12 +6,32 @@ import Navbar from './Components/Navbar'
 import Herosection from './Components/Herosection/index'
 
 function App() {
-  const [count, setCount] = useState(0);
+  const section =[
+    {
+      id:'home',
+      section:'Home'
+    },
+    {
+      id:'about',
+      section:'about'
+    },
+    {
+      id:'projects',
+      section:'projects'
+    },
+    {
+      id:'contact',
+      section:'contact'
+    }
+  ]
 
   return (
     <> 
-        <Navbar />
+    <section className='mainbody'>
+
+        <Navbar sections={section}/>
         <Herosection />
+    </section>
     </>
   );
 }
