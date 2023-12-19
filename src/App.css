@@ -1,4 +1,4 @@
-
+/* 
 .mainbody {
   margin: 1.5rem;
   padding: 1rem;
@@ -7,6 +7,6 @@
   .mainbody {
     margin: 0.5rem;
     padding: 0.5rem;
-    /* font-size: sm; */
+    font-size: sm;
   }
-}
+} */

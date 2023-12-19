@@ -1,37 +1,34 @@
 import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './Components/Navbar'
 import Herosection from './Components/Herosection/index'
 
 function App() {
-  const section =[
+  const section = [
     {
-      id:'home',
-      section:'Home'
+      id: 'home',
+      section: 'Home'
     },
     {
-      id:'about',
-      section:'about'
+      id: 'about',
+      section: 'About'
     },
     {
-      id:'projects',
-      section:'projects'
+      id: 'projects',
+      section: 'Projects'
     },
     {
-      id:'contact',
-      section:'contact'
+      id: 'contact',
+      section: 'Contact'
     }
   ]
 
   return (
-    <> 
-    <section className='mainbody'>
-
-        <Navbar sections={section}/>
+    <>
+      <section className='mainbody'>
+        <Navbar sections={section} />
         <Herosection />
-    </section>
+      </section>
     </>
   );
 }

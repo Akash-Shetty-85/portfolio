@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Poppins&family=Smooch&display=swap');
-
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+body {
+  background: #d8cef2c4;
+}
 /*
   1. Use a more-intuitive box-sizing model.
 */
