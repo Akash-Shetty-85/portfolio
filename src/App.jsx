@@ -25,10 +25,13 @@ function App() {
 
   return (
     <>
-      <section className='mainbody'>
-        <Navbar sections={section} />
-        <Herosection />
-      </section>
+      <div className='app-container'
+      >
+        <section className='mainbody'>
+          <Navbar sections={section} />
+          <Herosection />
+        </section>
+      </div>
     </>
   );
 }

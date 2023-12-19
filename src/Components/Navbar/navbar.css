@@ -1,5 +1,47 @@
-.nav-logo{
-    /* font-family: 'Ephesis', cursive;
-font-family: 'Poppins', sans-serif; */
-font-family: 'Smooch', cursive;
-}
+.nav-logo {
+    font-family: 'Smooch', cursive;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 150px;
+      height: 100%;
+      background-color: rgba(39, 38, 38, 0.847);
+      transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+      transform: translate3d(0, 0, 0); /* Hardware acceleration */
+    }
+  
+    .sidebar a {
+      padding: 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: rgb(11, 10, 10);
+      display: block;
+      transition: color 0.3s ease-in-out;
+    }
+  
+    .sidebar a:hover {
+      color: #bc1010;
+    }
+  
+    /* Add overlay style when sidebar is opened */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+      display: none; /* Initially hidden */
+      z-index: 0; /* Ensure the overlay is on top */
+    }
+  
+    /* Show overlay when sidebar is opened */
+    .sidebar.opened + .overlay {
+      display: block;
+    }
+  }
+  

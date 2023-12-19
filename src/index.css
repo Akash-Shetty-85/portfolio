@@ -2,9 +2,9 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-body {
+/* body {
   background: #d8cef2c4;
-}
+} */
 /*
   1. Use a more-intuitive box-sizing model.
 */
