@@ -7,7 +7,7 @@
       position: fixed;
       top: 0;
       left: 0;
-      width: 300px;
+      width: 70%;
       height: 100%;
       background-color: rgba(48, 47, 47, 0.847);
       transition: background-color 300ms ease-in-out, transform 900ms ease-in-out;

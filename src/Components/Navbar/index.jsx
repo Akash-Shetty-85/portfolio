@@ -61,7 +61,10 @@ const Navbar = ({ sections }) => {
       {showSidebar && (
         <div className='sidebar'>
           {/* Add sidebar links or components here */}
-          <div className='flex flex-wrap flex-col items-center gap-y-10'>
+          <div className='nav-logo text-5xl md:text-5xl mb-7 mt-5 flex items-center justify-center text-slate-100'>
+        Akash V
+      </div>
+          <div className='flex flex-wrap flex-col items-center gap-y-5'>
             {sections.map((section) => (
               <div key={section.id} className='mt-4 text-white'>
                 {section.section}
