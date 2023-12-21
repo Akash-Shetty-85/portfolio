@@ -17,5 +17,15 @@
     .sidebar.active {
       left: 0; 
     }
+    .nav-link.active {
+      /* Style for active sidebar item text */
+      font-weight: bold;
+      color: #ffffff; /* Your active text color */
+      background-color: #4a5568; /* Your active background color */
+      border-left: 3px solid #4299e1;
+      border-radius: 2%;
+      /* width: 30vw; */
+      padding: 10px; /* Adjust the padding as needed */
+    }
   }
   
