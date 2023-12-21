@@ -38,14 +38,14 @@
 }
 
 input:checked + .slider {
-    background-color: rgb(243, 251, 255);
+    /* background-color: rgb(243, 251, 255); */
     background-image: url('./Assests/sun.png');
     background-size: cover;
     background-position: center center;
 }
 
 input:focus + .slider {
-    box-shadow: 0 0 1px #2196f3;
+    /* box-shadow: 0 0 1px #2196f3; */
 }
 
 /* Rounded sliders */

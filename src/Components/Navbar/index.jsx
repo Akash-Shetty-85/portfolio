@@ -51,9 +51,9 @@ const Navbar = ({ sections }) => {
         <ToggleSwitch isDarkTheme={isDarkTheme} onToggle={toggleTheme} />
         <button onClick={toggleSidebar} className='relative'>
           {showSidebar ? (
-            <IoMdClose className='text-3xl text-red-400 transition duration-300 transform hover:scale-110' />
+            <IoMdClose className='text-3xl text-red-400 bg-transparent' />
           ) : (
-            <IoMdMenu className='text-3xl text-green-500 transition duration-300 transform hover:scale-110' />
+            <IoMdMenu className='text-3xl text-green-500 bg-transparent' />
           )}
         </button>
       </div>
