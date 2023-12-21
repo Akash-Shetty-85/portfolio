@@ -2,6 +2,7 @@
     font-family: 'Smooch', cursive;
   }
   
+  
   @media (max-width: 768px) {
     .sidebar {
       position: fixed;

@@ -27,14 +27,14 @@ const Navbar = ({ sections }) => {
   };
 
   return (
-    <div className={`flex flex-row md:flex-row justify-between items-center px-2 md:px-8 py-3 md:py-5 ${isDarkTheme ? 'dark-theme' : 'light-theme'}`}>
-      <div className='nav-logo text-3xl md:text-5xl mb-4 md:mb-0 mt-2 items-center'>
+    <div className={`flex flex-row md:flex-row justify-between items-center px-2 mt-3 md:px-8 py-3 md:py-5 ${isDarkTheme ? 'dark-theme' : 'light-theme'}`}>
+      <div className='nav-logo text-3xl md:text-5xl  md:mb-0 items-center'>
         Akash V
       </div>
 
       <div className='hidden md:flex flex-wrap items-center gap-x-10'>
         {sections.map((section) => (
-          <div key={section.id} className='mb-2 md:mb-0 md:ml-4'>
+          <div key={section.id} className='mb-2 md:mb-0 md:ml-4 text-lg font-medium '>
             {section.section}
           </div>
         ))}
@@ -56,7 +56,7 @@ const Navbar = ({ sections }) => {
         </button>
       </div>
 
-      <div className={`sidebar ${showSidebar ? 'active' : ''}`}>
+      <div className={`sidebar ${showSidebar ? 'active' : ''} md:hidden`}>
         <div className='nav-logo text-5xl md:text-5xl mb-7 mt-5 flex items-center justify-center text-slate-100'>
           Akash V
         </div>
