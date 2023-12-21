@@ -7,8 +7,9 @@
       position: fixed;
       top: 0;
       left: -100%; 
-      width: 60%;
-      height: 100%;
+      width: 70%;
+      height: 100vh;
+      overflow: scroll;
       background-color: #333333; 
       transition: left 0.5s ease-in-out; 
     }

@@ -60,13 +60,13 @@ const Navbar = ({ sections }) => {
         <div className='nav-logo text-5xl md:text-5xl mb-7 mt-5 flex items-center justify-center text-slate-100'>
           Akash V
         </div>
-        <div className='flex flex-wrap flex-col items-center gap-y-5'>
+        <div className='flex flex-wrap flex-col items-center gap-y-5 overflow-y-scroll'>
           {sections.map((section) => (
-            <div key={section.id} className='mt-4 text-white'>
+            <div key={section.id} className='mt-4 text-lg text-white'>
               {section.section}
             </div>
           ))}
-          <hr className='w-full bg-slate-400 h-[1px] ' />
+          <hr className='w-full bg-slate-400 h-[2px]'/>
           <button className='bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-xl'>
             Download CV
           </button>
