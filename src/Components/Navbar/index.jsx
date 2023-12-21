@@ -11,10 +11,8 @@ const Navbar = ({ sections }) => {
   const toggleTheme = () => {
     setIsDarkTheme((prevTheme) => !prevTheme);
 
-    // Assuming you have a class on the body or a container element
     const container = document.getElementById('app-container');
 
-    // Toggle between dark and light themes based on the state
     if (isDarkTheme) {
       container.classList.remove('dark-theme');
       container.classList.add('light-theme');
@@ -58,25 +56,22 @@ const Navbar = ({ sections }) => {
         </button>
       </div>
 
-      {showSidebar && (
-        <div className='sidebar'>
-          {/* Add sidebar links or components here */}
-          <div className='nav-logo text-5xl md:text-5xl mb-7 mt-5 flex items-center justify-center text-slate-100'>
-        Akash V
-      </div>
-          <div className='flex flex-wrap flex-col items-center gap-y-5'>
-            {sections.map((section) => (
-              <div key={section.id} className='mt-4 text-white'>
-                {section.section}
-              </div>
-            ))}
-            <hr className='w-full bg-slate-400 h-[1px] ' />
-            <button className='bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-xl'>
-              Download CV
-            </button>
-          </div>
+      <div className={`sidebar ${showSidebar ? 'active' : ''}`}>
+        <div className='nav-logo text-5xl md:text-5xl mb-7 mt-5 flex items-center justify-center text-slate-100'>
+          Akash V
         </div>
-      )}
+        <div className='flex flex-wrap flex-col items-center gap-y-5'>
+          {sections.map((section) => (
+            <div key={section.id} className='mt-4 text-white'>
+              {section.section}
+            </div>
+          ))}
+          <hr className='w-full bg-slate-400 h-[1px] ' />
+          <button className='bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-xl'>
+            Download CV
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
