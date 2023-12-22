@@ -11,13 +11,17 @@ const Herosection = () => {
 
   return (
     <section className="bg-gray-100 py-12">
-      <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center px-4">
+      <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-center px-4">
         <div className="lg:w-1/2">
-          <h1 className="text-4xl lg:text-6xl font-bold mb-4">
+          <h1 className="text-4xl lg:text-6xl font-semibold mb-4 font-heading">
             {profile.name}
           </h1>
-          <p className="text-lg lg:text-xl text-gray-700">{profile.role}</p>
-          <p className="font-heading">{profile.description}</p>
+          <p className="text-lg lg:text-xl text-gray-700 font-title">
+            {profile.role}
+          </p>
+          <p className=" mt-4 text-lg leading-6 text-gray-700 font-paragraph">
+            {profile.description}
+          </p>
         </div>
         <div className="lg:w-1/2 flex justify-center mt-8 lg:mt-0">
           <img

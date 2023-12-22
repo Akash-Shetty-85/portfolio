@@ -18,7 +18,9 @@ export default {
       },
     },
     fontFamily: {
-      heading: ["Poppins", "sans-serif"],
+      heading:['Pacifico', 'cursive'],
+      title:['Dancing Script', 'cursive'],
+      paragraph: ["Poppins", "sans-serif"],
     },
   },
   plugins: [],

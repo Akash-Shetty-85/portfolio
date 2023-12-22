@@ -37,22 +37,22 @@ const Navbar = ({ sections }) => {
         isDarkTheme ? "dark-theme" : "light-theme"
       } bg-slate-50 border-b-2 border-indigo-100`}
     >
-      <div className="nav-logo text-3xl md:text-5xl  md:mb-0 items-center">
+      <div className="nav-logo text-3xl md:text-5xl  md:mb-0 items-center text-">
         <Link to={"/"}>Akash V</Link>
       </div>
 
       <div className="hidden md:flex flex-wrap items-center gap-x-7">
         {sections.map((section) => (
-          <Link
+          <a
             key={section.id}
-            to={section.id}
+            href={`#${section.id}`}
             // className="mb-2 md:mb-0 md:ml-4 text-lg font-medium "
             className={`mt-4 text-lg mb-2 md:mb-0 md:ml-4  font-medium nav-link ${
-              location.pathname === `/${section.id}` ? "active" : ""
+              location.pathname === `/#${section.id}` ? "active" : ""
             }`}
           >
             {section.section}
-          </Link>
+          </a>
         ))}
         <hr className="w-[1px] bg-slate-400 h-8" />
         {/* <ToggleSwitch isDarkTheme={isDarkTheme} onToggle={toggleTheme} /> */}

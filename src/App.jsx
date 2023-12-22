@@ -32,13 +32,12 @@ function App() {
     <div className='app-container'>
       <Router>
         <Navbar sections={sections} />
-        <Routes>
-          <Route path='/' element={<Herosection />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/education' element={<Eduction />} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/contact' element={<Contact />} />
-        </Routes>
+        <Herosection/>
+        <About />
+        <Eduction />
+        <Projects />
+        <Contact />
+        
       </Router>
     </div>
   );
