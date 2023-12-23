@@ -7,25 +7,21 @@
     .sidebar {
       position: fixed;
       top: 0;
-      left: -100%; 
-      width: 70%;
-      height: 100vh;
-      overflow: scroll;
-      background-color: #333333; 
-      transition: left 0.5s ease-in-out; 
+      left: 0;
+      width: 60%;
+      height: 100%;
+      background-color: rgba(16, 16, 16, 0.9);
+      transition: background-color 300ms ease-in-out, transform 300ms ease-in-out ,width 300ms ease-in;
+      transform: translate3d(0, 0, 0); /* Hardware acceleration */
     }
     .sidebar.active {
       left: 0; 
     }
-    .nav-link.active {
-      /* Style for active sidebar item text */
-      font-weight: bold;
-      color: #ffffff; /* Your active text color */
-      background-color: #4a5568; /* Your active background color */
-      border-left: 3px solid #4299e1;
-      border-radius: 2%;
-      /* width: 30vw; */
-      padding: 10px; /* Adjust the padding as needed */
+  
+    .sidebar a:hover {
+      color: #bc1010;
     }
+  
+    
   }
   
